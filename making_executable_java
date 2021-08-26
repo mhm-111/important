@@ -1,0 +1,19 @@
+
+To open jar files in kali linux 2.0 create a empty text file with the extension desktop (such as test.desktop) , and paste the following content into it.
+
+[Desktop Entry]
+Name=Java
+Comment=Java
+GenericName=Java
+Keywords=java
+Exec=java -jar %f
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+MimeType=application/x-java-archive
+StartupNotify=true
+
+Then save the file and move or copy the file in /usr/share/applications folder.
+now change the 'open_with' application with 'java' from the list.
+
+source: https://www.youtube.com/watch?v=ays_IOKclZo
