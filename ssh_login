@@ -27,6 +27,45 @@ ______________________________________________________
 >if port is changed : [  ssh phoenixnap@185.52.53.222 –p7654   ]  port has to be declared by -p flag.
 
 
+                                                         >>> Id_rsa crack by John<<<
+                                                         --------------------------------
+                                 
+
+>  At first we have to get rsa private key(id_rsa)
+> Then we have to convert it into hashfile(id_rsa.hash)
+> we wil use ssh2john .
+> [ sudo python /usr/share/john/ssh2john.py id_rsa > id_rsa.hash  ]
+> Then we have to crack hash file 
+> john --wordlist=darkweb2017-top10.txt id_rsa.hash
+> john --show id_rsa.hash
+> Then comes the cracked password if everything works perfectly.
+
+
+
+              
+              
+                                                 Login By id_rsa key
+                                               ------------------------
+ 
+> Now we have to Login
+> before login we have to give permission id_rsa file.
+> chmod 400 id_rsa
+> [ ssh -i id_rsa phoenixnap@185.52.53.222 ]
+> Then we have to give the cracked pass word.
+> Then we are in !
+
+Awesome Blog : https://null-byte.wonderhowto.com/how-to/crack-ssh-private-key-passwords-with-john-ripper-0302810/
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
 
 
 
@@ -47,4 +86,4 @@ ________
 
 
 
-[note: python -m SimpleHTTPServer 8000 ]
+[note: python -m SimpleHTTPServer 8000 ---- see the above mentione nullbyte blog for more details.....]
