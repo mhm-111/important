@@ -1,0 +1,19 @@
+>>>>> How to Install an OpenSSH Client:
+-------------------------------------------------
+> In kali linux ssh is installed by default. In ubuntu you have to install it
+>To install ssh: sudo apt-get install openssh-client
+> Now your system is ready to connect with ssh server.
+
+>>>>> How to Install an OpenSSH Server
+--------------------------------------------
+> You have to install ssh in server system.
+> sudo apt-get install openssh-server ii
+> now you can check if ssh is properly installed or not by this command:  [  sudo service ssh status ]
+> to start ssh connection from server : [ ssh localhost ] . Your server is ready for ssh client.
+
+>>>>> Configuring Server
+----------------------------------
+> You can now edit the SSH daemon configuration file, for example, you can change the default port for SSH connections.
+> command:  [ sudo nano /etc/ssh/sshd_config ]
+> Please note that you need to restart SSH service every time you make any changes to the sshd_config file by running this command.
+> [ sudo service ssh restart ]
