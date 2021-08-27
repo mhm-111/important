@@ -25,3 +25,17 @@ ______________________________________________________
 
 >if ssh is running is default 22 port then command:  [ ssh your_username@host_ip_address  ]    example: [ ssh phoenixnap@185.52.53.222 ]
 >if port is changed : [  ssh phoenixnap@185.52.53.222 –p7654   ]  port has to be declared by -p flag.
+
+
+
+
+
+
+
+>>>>> Important Command:
+------------------------------------
+
+COPY:
+________
+> To copy file from client to server: [ scp /home/mhm/file.txt phoenixnap@185.52.53.222:/home/phoenix/ssh_folder  ] 
+> It will copy file.txt to ssh_folder.
