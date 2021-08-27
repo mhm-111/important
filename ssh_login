@@ -39,3 +39,12 @@ COPY:
 ________
 > To copy file from client to server: [ scp /home/mhm/file.txt phoenixnap@185.52.53.222:/home/phoenix/ssh_folder  ] 
 > It will copy file.txt to ssh_folder.
+
+
+
+
+
+
+
+
+[note: python -m SimpleHTTPServer 8000 ]
