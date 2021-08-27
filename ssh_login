@@ -17,3 +17,11 @@
 > command:  [ sudo nano /etc/ssh/sshd_config ]
 > Please note that you need to restart SSH service every time you make any changes to the sshd_config file by running this command.
 > [ sudo service ssh restart ]
+
+
+
+>>>>> Connect ssh client to server
+______________________________________________________
+
+>if ssh is running is default 22 port then command:  [ ssh your_username@host_ip_address  ]    example: [ ssh phoenixnap@185.52.53.222 ]
+>if port is changed : [  ssh phoenixnap@185.52.53.222 –p7654   ]  port has to be declared by -p flag.
