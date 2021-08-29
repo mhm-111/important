@@ -39,6 +39,8 @@ ______________________________________________________
 > john --wordlist=darkweb2017-top10.txt id_rsa.hash
 > john --show id_rsa.hash
 > Then comes the cracked password if everything works perfectly.
+>  To check the password in pot file:
+   [ cat ~/.john/john.pot  ]   : we have to be the root to cat ~/ dir .
 
 
 
