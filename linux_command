@@ -1,0 +1,7 @@
+1.  wc -l file01.txt
+---------------------------------
+count line in a file.
+
+2.  uniq kt.txt
+---------------------
+remove duplicate entries from a file
