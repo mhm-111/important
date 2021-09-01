@@ -5,3 +5,14 @@ count line in a file.
 2.  uniq kt.txt
 ---------------------
 remove duplicate entries from a file
+
+3. cat file | sort | uniq -u
+_________________________________
+it will show only uniq line (which line is not double)
+
+4.cat file | sort | uniq 
+--------------------------------
+It will remove duplicate lines....
+
+
+
